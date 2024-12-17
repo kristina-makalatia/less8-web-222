@@ -1,0 +1,113 @@
+.container {
+  width: 1220px;
+  margin: 0 auto;
+  background-color: lightblue;
+}
+.title-box {
+  text-align: center;
+  background-color: lightcoral;
+}
+.image-wraper {
+  display: flex;
+  justify-content: space-between;
+}
+.image-box {
+  width: 386px;
+  position: relative;
+}
+.white-box {
+  background-color: #fff;
+  width: 341px;
+  height: 114px;
+  position: absolute;
+  bottom: 22px;
+  left: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* background image property */
+.bg-image {
+  background-image: url("../images/MainAfter.jpg");
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-block-bg-image {
+  background-color: lightseagreen;
+  width: 400px;
+}
+
+.image-element {
+  width: 1200px;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* hover effects */
+.block {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  position: relative;
+  /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 3s; */
+  transition: all 2s linear 3s;
+}
+.small-block {
+  width: 150px;
+  height: 150px;
+  background-color: brown;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  transition: all 1s;
+}
+.block:hover {
+  background-color: lightgreen;
+}
+.small-block:hover {
+  background-color: blueviolet;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/* keyframes animation car */
+.image-car {
+  height: 100px;
+  /* animation-name: carmove;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction:alternate; */
+  /* position: absolute; */
+  animation: carmovenew 5s infinite ease-in 3s alternate;
+}
+.image-car-wraper {
+    /* position: relative;
+    height: 200px; */
+}
+
+/* @keyframes carmove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 600px;
+  }
+} */
+
+
+@keyframes carmovenew {
+    from {transform: translateX(0px);}
+    to {transform: translateX(600px);}
+}
